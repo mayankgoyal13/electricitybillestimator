@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Estimator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="assets/logo.png" alt="logo">
+            <h1>CANADA</h1>
+        </div>
+        <h1>Electricity Bill Estimator</h1>
+    </header>
+    <main>
+        <div  class="note">
+            <p>Fill out the all the details and choose the province from the dropdown, to get an estimate of the ELECTRICITY BILL.</p>
+            <p>(NOTE: Even if your usage is 0 (Either in onpeak or off-peak ). Enter 0 dont leave anything blank.)</p>
+
+        </div>
+        <div class="estimator-block">
+            <div class="estimator">
+                <h1>
+                    ELECTRICITY BILL ESTIMATOR:
+                </h1>
+                <div class="form">
+                    <label>Enter kwh used during on-peak hours:</label>
+                    <input type="text" id="on-peak" placeholder="Enter on-peak hours">
+                    <label>Enter kwh used during off-peak hours:</label>
+                    <input type="text" id="off-peak" placeholder="Enter off-peak hours">
+                    <label>Province of Residence:</label>
+                    <select id="province">
+                        <option value="BC">British Columbia</option>
+                        <option value="ON">Ontario</option>
+                    </select>
+                    <button type="submit" id="calculate">CALCULATE</button>
+                </div>
+            </div>
+            <div class="result" id="res"> 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="assets/logo.png" alt="logo">
+            <h2>Canada Electricity Calculator.</h2></div>
+        <h2>© All Rights Reserved</h2>
+    </footer>
+</body>
+<script src="js/app.js"></script>
+</html>
